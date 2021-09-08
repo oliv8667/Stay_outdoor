@@ -1,14 +1,14 @@
+/*************************************************************Generelle regler **************************************************/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-img,
-video {
+img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 html {
@@ -23,19 +23,22 @@ li {
 a {
   text-decoration: none;
 }
-
 main {
   max-width: 180ch;
   margin: auto;
   padding: 0 1.5rem;
 }
 
+/*************************************************************Generelle regler slut****************************************/
+
+/*************************************************************Burger Menu*************************************************/
+
 .header {
-  background-color: #2d66ee;
-  position: fixed;
-  width: 100%;
+  position: sticky;
+  top: 0rem;
   z-index: 100;
-  border-bottom: 0.3rem solid #feb700;
+  display: flex;
+  justify-content: end;
 }
 
 .nav_bar {
@@ -48,8 +51,11 @@ main {
 .hamburger {
   display: none;
   margin: 0;
-  align-self: flex-end;
-  display: flex;
+}
+
+.logo {
+  height: 2rem;
+  width: 2rem;
 }
 
 .bar {
@@ -57,7 +63,7 @@ main {
   height: 0.25rem;
   margin: 0.25rem auto;
   transition: 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: #1c676a;
   border-radius: 4px;
 }
 
@@ -83,48 +89,57 @@ main {
 }
 
 .nav_link:hover {
-  color: #2d66ee;
-  background-color: #feb700;
-  border-left: 0.125rem solid #feb700;
-  border-right: 0.125rem solid #feb700;
-  box-shadow: 0 0 3rem #feb700;
+  border-bottom: 2px solid white;
 }
 
 .nav_menu {
-    position: fixed;
-    left: -100%;
-    top: 3rem;
-    flex-direction: column;
-    background-color: #2d66ee;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    transition: 0.3s;
-    padding: 0 3rem 12rem 3rem;
-  }
-  .nav_menu.open {
-    left: 0;
-  }
-  .nav_item {
-    margin: 2rem 0;
-  }
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    transition: ease-out 250ms;
-  }
-  .hamburger:hover {
-    margin: 0.25rem;
-  }
+  position: fixed;
+  left: -100%;
+  top: 3rem;
+  flex-direction: column;
+  background-color: #1c676a;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  transition: 0.3s;
+  padding: 0 3rem 12rem 3rem;
+}
+.nav_menu.open {
+  left: 0;
+}
+.nav_item {
+  margin: 2rem 0;
+}
+.hamburger {
+  display: block;
+  cursor: pointer;
+  transition: ease-out 250ms;
+}
 
-  .hamburger.open .bar:nth-child(2) {
-    transform: translateX(70px);
-  }
-  .hamburger.open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
+.hamburger.open .bar:nth-child(2) {
+  transform: translateX(70px);
+}
+.hamburger.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
 
-  .hamburger.open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+.hamburger.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
+/*************************************************************Burger Menu slut*********************************************/
+
+.header {
+  margin-bottom: 2rem;
+  padding: 5rem;
+  border-bottom: 5px solid #1c676a;
+}
+
+/************************* Baggrund ********************/
+
+body {
+  background-image: url(baggrund.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 63%;
+}
