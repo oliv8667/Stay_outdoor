@@ -4,17 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Stay Outdoor</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="logo"></div>
-      <nav>
-        <ul>
-          <li><button></button></li>
+      <nav class="nav_bar">
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul class="nav_menu">
+          <li class="nav_item">
+            <a href="index.html" class="nav_link">Forside</a>
+          </li>
+          <li class="nav_item">
+            <a href="web.html" class="nav_link">Button</a>
+          </li>
+          <li class="nav_item">
+            <a href="ux.html" class="nav_link">Button</a>
+          </li>
+          <li class="nav_item">
+            <a href="animation.html" class="nav_link">Button</a>
+          </li>
+          <li class="nav_item">
+            <a href="content.html" class="nav_link">Button</a>
+          </li>
+          <li class="nav_item">
+            <a href="mig.html" class="nav_link">Button</a>
+          </li>
+          <li class="nav_item" id="desktop_only">
+            <a href="galleri.html" class="nav_link">Button</a>
+          </li>
         </ul>
       </nav>
     </header>
+    
     <main>
       <section class="baggrund"></section>
       <section class="section_front">
@@ -41,5 +69,6 @@
       </template>
     </main>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
