@@ -37,8 +37,6 @@ main {
   position: sticky;
   top: 0rem;
   z-index: 100;
-  display: flex;
-  justify-content: end;
 }
 
 .nav_bar {
@@ -54,18 +52,29 @@ main {
 }
 
 .logo {
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
+  color: white;
 }
 
-.bar {
-  width: 2rem;
-  height: 0.25rem;
-  margin: 0.25rem auto;
+.hamburger .bar {
+  width: 3rem;
+  height: 0.3rem;
+  margin: 0.3rem auto;
   transition: 0.3s ease-in-out;
-  background-color: #1c676a;
+  background-color: #fff;
   border-radius: 4px;
 }
+
+/* #bar_1 {
+  width: 2rem;
+}
+#bar_2 {
+  width: 1.8rem;
+}
+#bar_3 {
+  width: 1.5rem;
+} */
 
 .nav_menu {
   display: flex;
@@ -95,7 +104,7 @@ main {
 .nav_menu {
   position: fixed;
   left: -100%;
-  top: 3rem;
+  top: 8rem;
   flex-direction: column;
   background-color: #1c676a;
   width: 100%;
@@ -116,23 +125,31 @@ main {
   transition: ease-out 250ms;
 }
 
-.hamburger.open .bar:nth-child(2) {
-  transform: translateX(70px);
-}
 .hamburger.open .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px);
 }
 
 .hamburger.open .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px);
 }
 
 /*************************************************************Burger Menu slut*********************************************/
 
 .header {
   margin-bottom: 2rem;
-  padding: 5rem;
-  border-bottom: 5px solid #1c676a;
+  padding: 3rem;
+  background-color: #1c676a;
+  display: flex;
+  justify-content: space-between;
+}
+
+.venstre_header {
+  display: flex;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2rem;
 }
 
 /************************* Baggrund ********************/
